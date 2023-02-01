@@ -1,2 +1,12 @@
 Find: ([!?.])
 Replace: \1\r\n
+
+1. \b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b - search for email addresses in a document.
+
+2. \b(\d{3}[-.]?)?\d{3}[-.]?\d{4}\b - search for phone numbers in a document.
+
+3. \b(\d{1,2})[\/.\-](\d{1,2})[\/.\-](\d{4})\b - for dates in a document.
+
+4. \b[A-Z][a-z]+\b - search for words that begin with an uppercase letter and are followed by lowercase letters.
+
+5. \b[A-Z]{2,}\b - search for words that contain two or more uppercase letters.
